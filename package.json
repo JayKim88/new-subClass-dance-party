@@ -10,7 +10,8 @@
     "test": "mocha spec/test.js",
     "precommit": "lint-staged",
     "lint": "eslint src",
-    "submit": "node .travis/submit.js"
+    "report": "mocha spec/test.js --reporter @mochajs/json-file-reporter",
+    "submit": "codestates-submission"
   },
   "lint-staged": {
     "linters": {
@@ -25,7 +26,6 @@
       "lib/underscore/underscore.js"
     ]
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codestates/im10-2019-01-subclass-dance-party.git"
@@ -37,12 +37,16 @@
   },
   "homepage": "https://github.com/codestates/im10-2019-01-subclass-dance-party#readme",
   "devDependencies": {
-    "eslint": "^5.11.1",
+    "@mochajs/json-file-reporter": "^1.3.0",
     "chai": "^4.2.0",
+    "eslint": "^5.11.1",
     "husky": "^0.14.3",
     "jsdom": "^12.0.0",
     "lint-staged": "^7.2.2",
-    "mocha": "^5.2.0",
+    "mocha": "^8.2.1",
     "sinon": "^6.3.5"
+  },
+  "dependencies": {
+    "@codestates-cc/submission-npm": "^1.1.2"
   }
 }
