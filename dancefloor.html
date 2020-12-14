@@ -4,15 +4,23 @@
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <!-- 추후에 functional 대신, class 혹은 psuedoclassical 중 하나를 선택해서 사용하세요 -->
-    <script src="src/functional/dancer.js"></script>
-    <script src="src/functional/blinkyDancer.js"></script>
+    <script src="src/class/DancerClass.js"></script>
+    <script src="src/class/BlinkyDancerClass.js"></script>
   </head>
   <body>
-    <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton">add a blinky dancer</a>
+
+    <div id="container" class="topbar">
+      <!-- bgm -->
+      <div id="items">
+        <audio src="src/class/bgm/byulbit.mp3" autoplay controls></audio>
+        <!-- bgm done-->
+      
+        <a href="#" id="btnLineUp" class="btn" style="margin: 0 20px;">line up</a>
+        <a href="#" id="addStarButton" class="btn">add Shining Star</a>
+        <span class="title" style="position: relative;">object star party</span>
+      </div>
     </div>
     <!-- 추후에 functional 대신, class 혹은 psuedoclassical 중 하나를 선택해 init.js를 구현한 후, 사용하세요 -->
-    <script src="src/functional/init.js"></script>
+    <script src="src/class/init.js"></script>
   </body>
 </html>

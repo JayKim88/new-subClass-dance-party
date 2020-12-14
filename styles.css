@@ -3,30 +3,85 @@ html {
   height: 100%;
 }
 body {
+  /* cursor: crosshair; */
   margin: 0px;
-  background-color: #444;
+  background-image: url(/src/class/img/night-sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 18px;
+  /* cursor: url(/src/class/img/cursor.png), default; */
+  display: flex;
 }
 body,
 a:link,
 a:visited,
 a:active {
   color: lightblue;
+  font-size: large;
+  text-decoration:none;
+}
+
+.btn {
+  color: lightblue;
+  -moz-transition:color .2s ease;   
+  -o-transition:color .2s ease;   
+  -ms-transition:color .2s ease;   
+  -webkit-transition:color .2s ease;   
+  transition:color .2s ease; 
+}
+
+.btn:hover {
+  color: rgb(216, 164, 31);
+}
+
+/* #container { */
+  /* display: flex;
+  flex-direction: row;
+  position: absolute; */
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
+  /* justify-content: space-between; */
+/* } */
+
+#items {
+  display: flex;
+  /* justify-content:center; */
+  align-items: center;
 }
 .title,
-.addDancerButton {
+.addStarButton {
   padding: 5px 12px;
-  float: right;
+  /* float: right; */
 }
+
+.title {
+  position: relative;
+  left: 40%;
+}
+
 .topbar {
-  height: 32px;
-  background-color: #555;
+  height: 50px;
+  /* background-color: #555; */
 }
 .title {
-  background-color: #777;
+  /* background-color: #777; */
+  font-weight: bold;
 }
+
 .dancer {
-  border: 10px solid red;
-  border-radius: 10px;
+  /* border: 10px solid darkblue; */
+  /* border-radius: 10px; */
   position: absolute;
+  /* content: url(/src/class/img/star.png); */
+}
+
+/* .dancer img{
+  background-color: white;
+  src: url(/src/class/img/star.png);
+} */
+
+.dancer:hover {
+  cursor: pointer;
+  transform: scale(2);
+  /* transform: rotate( 720deg ); */
 }

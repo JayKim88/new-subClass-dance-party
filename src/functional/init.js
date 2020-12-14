@@ -8,7 +8,7 @@ function handleClickDancerButton () {
   */
 
   // make a dancer with a random position
-  let dancer = makeBlinkyDancer(
+  let dancer = BlinkyDancer(
     document.body.clientHeight * Math.random(),
     document.body.clientWidth * Math.random(),
     Math.random() * 1000
